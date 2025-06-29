@@ -1,0 +1,11 @@
+{
+  "name": "i-simple-test",
+  "version": "1.0.1",
+  "description": "i 简测是一款轻量级、完全本地化运行的 API 测试工具，专为开发者设计，具有以下核心特点：",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
