@@ -58,7 +58,7 @@ i 简测是一款轻量级、完全本地化运行的 API 测试工具，专为�
 
 - 支持平台：window [macOS, Linux 没 mac 笔记本不支持先！]
 - 下载方式：
-- [点击下载 im-api-test-1.0.0-setup.exe](https://github.com/tongmingwang/i-simple-test/archive/refs/tags/1.0.1.zip)
+- [点击下载 im-api-test-setup.exe](https://github.com/tongmingwang/i-simple-test/archive/refs/tags/1.0.1.zip)
 - 问题反馈：作者微信(微信号：Tomin_6688)或(邮件1689732695@qq.com)
 
 i 简测致力于为开发者提供最简单纯粹的 API 测试体验，无需担心数据安全，无需忍受复杂配置，让 API 测试回归本质。
