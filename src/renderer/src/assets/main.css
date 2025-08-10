@@ -1,0 +1,105 @@
+.drag {
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.no_drag {
+  -webkit-app-region: no-drag;
+}
+
+html,
+body,
+#app {
+  min-width: 1000px;
+  overflow: auto;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+.flex_center {
+  align-items: center;
+}
+
+.gap_8 {
+  gap: 8px;
+}
+
+.mr_8 {
+  margin-right: 8px !important;
+}
+
+.ml_8 {
+  margin-left: 8px !important;
+}
+
+.mb_16 {
+  margin-bottom: 16px !important;
+}
+
+.ml_16 {
+  margin-left: 16px !important;
+}
+
+.mt_16 {
+  margin-top: 16px !important;
+}
+
+.base_label {
+  width: 100px;
+  text-align: left;
+  opacity: 0.85;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.pl_16 {
+  padding-left: 16px;
+}
+
+.pl_24 {
+  padding-left: 24px;
+}
+
+.pr_24 {
+  padding-right: 24px;
+}
+
+.pr_16 {
+  padding-right: 16px;
+}
+
+.pt_16 {
+  padding-top: 16px;
+}
+
+.pb_16 {
+  padding-bottom: 16px;
+}
+
+.p_16 {
+  padding: 16px;
+}
+
+.p_8 {
+  padding: 8px;
+}
+
+.p_0 {
+  padding: 0 !important;
+}
