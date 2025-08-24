@@ -388,7 +388,6 @@ const exportToJSON = () => {
 
   .result {
     margin-top: 16px;
-    padding: 1px 16px;
     background-color: var(--im-bg-content-color);
     border-radius: 8px;
   }

@@ -5,26 +5,24 @@
       <span class="title">i简测</span>
     </div>
     <div class="app_menu no_drag">
-      <ImButton variant="text" size="36" shape="circle" @click="openView = true">
-        <ImIcon name="search" size="20" />
+      <ImButton variant="text" size="28" shape="circle" @click="openView = true">
+        <ImIcon name="search" size="16" />
       </ImButton>
-      <ImButton color="default" variant="text" shape="circle" size="36" @click="onOpenTip">
-        <ImIcon name="question-circle" size="20" />
+      <ImButton color="default" variant="text" shape="circle" size="28" @click="onOpenTip">
+        <ImIcon name="question-circle" size="16" />
       </ImButton>
-      <ImButton color="default" variant="text" shape="circle" size="36" @click="open = true">
-        <ImIcon name="setting" size="20" />
+      <ImButton color="default" variant="text" shape="circle" size="28" @click="open = true">
+        <ImIcon name="setting" size="16" />
       </ImButton>
-
       <ImDivider vertical />
-
-      <ImButton shape="circle" variant="text" @click="onMini">
-        <ImIcon name="minus" size="18" />
+      <ImButton shape="" variant="text" @click="onMini">
+        <ImIcon name="minus" size="16" />
       </ImButton>
-      <ImButton shape="circle" variant="text" @click="onSetMax">
-        <ImIcon name="expend" size="18" />
+      <ImButton shape="" variant="text" @click="onSetMax">
+        <ImIcon name="expend" size="16" />
       </ImButton>
-      <ImButton shape="circle" variant="text" @click="onClose">
-        <ImIcon name="close" size="18" />
+      <ImButton shape="" variant="text" @click="onClose">
+        <ImIcon name="close" size="16" />
       </ImButton>
     </div>
   </header>
@@ -88,7 +86,7 @@
 
   <!-- webview模式 -->
   <ImDialog v-model="openView" width="90%" height="90%" class="no_drag">
-    <ImDialogHeader divider>
+    <ImDialogHeader>
       搜索一下
       <template #action>
         <ImButton color="default" variant="text" shape="circle" size="40" @click="openView = false">
@@ -96,18 +94,14 @@
         </ImButton>
       </template>
     </ImDialogHeader>
-    <div>
-      <div class="pl_24 pr_24">
-        <ImTabs v-model="searchUrl" color="warning">
-          <ImTab v-for="item in List" :name="item.url">{{ item.label }}</ImTab>
-        </ImTabs>
-      </div>
-      <ImPanes v-model="searchUrl">
-        <ImPane v-for="item in List" :name="item.url">
-          <webview id="webview" :src="item.url" allowpopups nodeintegration></webview>
-        </ImPane>
-      </ImPanes>
-    </div>
+    <ImTabs v-model="searchUrl" color="warning">
+      <ImTab v-for="item in List" :name="item.url">{{ item.label }}</ImTab>
+    </ImTabs>
+    <ImPanes v-model="searchUrl">
+      <ImPane v-for="item in List" :name="item.url">
+        <webview id="webview" :src="item.url" allowpopups nodeintegration></webview>
+      </ImPane>
+    </ImPanes>
   </ImDialog>
 </template>
 
@@ -199,6 +193,7 @@ const onOpenTip = () => {
 
 <style scoped lang="scss">
 .app_bar {
+  --h: 36px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -208,8 +203,7 @@ const onOpenTip = () => {
   top: 0;
   left: 0;
   z-index: 100;
-  height: 48px;
-
+  height: var(--h);
   .left {
     padding: 0 20px;
     display: flex;
@@ -237,9 +231,9 @@ const onOpenTip = () => {
 .app_menu {
   display: flex;
   align-items: center;
-  height: 48px;
+  height: var(--h);
   padding-right: 8px;
-  gap: 8px;
+  gap: 4px;
 }
 
 .mb_24 {

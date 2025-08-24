@@ -24,7 +24,7 @@
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^4.0.0",
     "electron-updater": "^6.3.9",
-    "im-design": "^1.4.47",
+    "im-design": "^1.4.50",
     "json-editor-vue": "^0.18.1",
     "pinia": "^3.0.3",
     "sass": "^1.89.2",

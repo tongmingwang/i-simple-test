@@ -4,7 +4,7 @@
       <ImDialogHeader divider
         >接口信息
         <template #action>
-          <ImButton shape="square" variant="text" @click="editProShow = false">
+          <ImButton shape="circle" variant="text" @click="editProShow = false">
             <ImIcon name="close" size="20" />
           </ImButton>
         </template>
